@@ -8,7 +8,7 @@ load_dotenv()
 # API Key and email details
 API_KEY = os.getenv("ELASTICEMAIL_API_KEY")
 EMAIL_SENDER = os.getenv("EMAIL_SENDER")
-EMAIL_RECIPIENTS = os.getenv("EMAIL_RECIPIENTS").split(',')
+EMAIL_RECIPIENTS = os.getenv("EMAIL_RECIPIENTS")
 
 # Fungsi untuk mengirim email
 def send_email(to_email, subject, message):
